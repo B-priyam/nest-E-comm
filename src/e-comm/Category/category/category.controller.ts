@@ -24,7 +24,6 @@ export class CategoryController {
 
     @Post("editCategory")
     async editCategory(@Body() data:any){
-        console.log(data)
         return this.categoryService.editCategory(data)
     }
 }
